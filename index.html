@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Responda</title>
+    <title>Página de Verificação de Idade</title>
     <style>
         body {
             background-color: #FFFFFF;
@@ -14,13 +14,13 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            padding: 40px;
+            padding: 20px;
         }
 
         .pergunta {
-            font-size: 36px;
+            font-size: 4vw; /* Proporcionalmente igual em todos os dispositivos */
             color: #000000;
-            margin-bottom: 80px; /* Triplo de espaço para o botão verde */
+            margin-bottom: 4vw; /* Espaçamento otimizado */
             text-align: center;
         }
 
@@ -28,14 +28,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 30px;
+            gap: 2vw; /* Espaçamento otimizado */
         }
 
         .botao {
-            width: 200px;
-            height: 60px;
+            width: 40vw; /* Proporcionalmente igual em todos os dispositivos */
+            height: 12vw; /* Proporcionalmente igual em todos os dispositivos */
             border: none;
-            font-size: 20px;
+            font-size: 3vw; /* Proporcionalmente igual em todos os dispositivos */
             color: #FFFFFF;
             cursor: pointer;
         }
@@ -49,40 +49,17 @@
         }
 
         .wmv {
-            font-size: 22px;
+            font-size: 3vw; /* Proporcionalmente igual em todos os dispositivos */
             color: #000000;
-            margin-top: 80px; /* Triplo de espaço para o botão vermelho */
+            margin-top: 4vw; /* Espaçamento otimizado */
             text-align: center;
         }
 
         .rodape {
-            margin-top: 50px;
-            font-size: 12px;
+            margin-top: 3vw; /* Espaçamento otimizado */
+            font-size: 2vw; /* Proporcionalmente igual em todos os dispositivos */
             color: #808080;
             text-align: center;
-        }
-
-        /* Media Query para formato mobile */
-        @media (max-width: 480px) {
-            .pergunta {
-                font-size: 96px;
-                margin-bottom: 80px;
-            }
-
-            .botao {
-                width: 320px;
-                height: 100px;
-                font-size: 32px;
-            }
-
-            .wmv {
-                font-size: 18px;
-                margin-top: 40px;
-            }
-
-            .rodape {
-                margin-top: 20px;
-            }
         }
     </style>
 </head>
@@ -101,13 +78,13 @@
 
     <!-- Rodapé -->
     <div class="rodape">
-        <div class="text-gray mt-4">
+        <div class="text-gray mt-2">
             <a href="termos.html" class="text-gray">Termos de Uso</a> | <a href="privacidade.html" class="text-gray">Política de Privacidade</a>
         </div>
-        <div class="text-gray mt-4">
+        <div class="text-gray mt-2">
             <a href="termos.html" class="text-gray">Sobre Nós</a> | <a href="privacidade.html" class="text-gray">Política de Reembolso</a>
         </div>
-        <div class="text-gray mt-4">
+        <div class="text-gray mt-2">
             <a href="termos.html" class="text-gray">Fale Conosco</a> | <a href="privacidade.html" class="text-gray">Política de Envio</a>
         </div>
     </div>
