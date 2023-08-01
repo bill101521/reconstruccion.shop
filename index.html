@@ -14,12 +14,14 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            padding: 20px;
         }
 
         .pergunta {
             font-size: 36px;
             color: #000000;
-            margin-bottom: 20px;
+            margin-bottom: 60px; /* Triplo de espaço para o botão verde */
+            text-align: center;
         }
 
         .botoes {
@@ -49,7 +51,38 @@
         .wmv {
             font-size: 22px;
             color: #000000;
-            margin-top: 20px;
+            margin-top: 60px; /* Triplo de espaço para o botão vermelho */
+            text-align: center;
+        }
+
+        .rodape {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #808080;
+            text-align: center;
+        }
+
+        /* Media Query para formato mobile */
+        @media (max-width: 480px) {
+            .pergunta {
+                font-size: 24px;
+                margin-bottom: 40px;
+            }
+
+            .botao {
+                width: 160px;
+                height: 50px;
+                font-size: 16px;
+            }
+
+            .wmv {
+                font-size: 18px;
+                margin-top: 40px;
+            }
+
+            .rodape {
+                margin-top: 20px;
+            }
         }
     </style>
 </head>
@@ -65,6 +98,19 @@
         </a>
     </div>
     <div class="wmv">wmv digital</div>
+
+    <!-- Rodapé -->
+    <div class="rodape">
+        <div class="text-gray mt-4">
+            <a href="termos.html" class="text-gray">Termos de Uso</a> | <a href="privacidade.html" class="text-gray">Política de Privacidade</a>
+        </div>
+        <div class="text-gray mt-4">
+            <a href="termos.html" class="text-gray">Sobre Nós</a> | <a href="privacidade.html" class="text-gray">Política de Reembolso</a>
+        </div>
+        <div class="text-gray mt-4">
+            <a href="termos.html" class="text-gray">Fale Conosco</a> | <a href="privacidade.html" class="text-gray">Política de Envio</a>
+        </div>
+    </div>
 </body>
 
 </html>
